@@ -1,1 +1,365 @@
+<!DOCTYPE HTML>
+<html lang="en"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="author" content="Halleh B. Balch">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LD87H8K4KC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LD87H8K4KC');
+  </script>
+
+  <title>Shilong</title>
+
+<style type="text/css">
+
+/* hyperlink text */
+  a {
+  color: #488E99; #255C99;/* #C6CA53; /*#63B0CD /*#7DA862;*/  ; /*#07889b;*/ /*#1772d0;*/ /*sets the color of the hyperlinks*/
+  text-decoration:none;
+  }
+  a:focus, a:hover {
+  color: #F26430; /*#7DA862;*/ /*#e37222*/; /*#ffc300;*/ /*#e37222;*/ /*#f7b733;*/ /*f09228;*//*sets the color of the hoverover hyperlink*/
+  text-decoration: underline; /*underline;*/
+  /* text-decoration:none; */
+  }
+
+  /* body text */
+  body,td,th,tr,p,a {
+  /* font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;  */
+  /* font-family: 'Lato', Verdana, Helvetica, sans-serif; */
+  /* font-family:'Garamond',sans-serif */
+  font-family: "Veranda", sans-serif;
+  font-weight: 200;
+  font-size: 15px; /*14*/
+  }
+
+  strong {
+  /* font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; */
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 15px; /*14*/
+  }
+
+  ul {
+list-style-type: square;
+  }
+
+
+/* headings */
+
+  heading {
+  /* font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/ */
+  font-family: "Veranda", sans-serif;
+  font-size: 27px;
+  color: #F26430; /*  #153243; /* #e37222;  /*#e37222*;/ /*#fc4a1a;*/
+  font-weight: 500;
+  }
+  heading2 {
+  /* font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/
+  font-family: "Veranda", sans-serif;
+  /* color:   #e37222;  /*#e37222*;/ /*#fc4a1a;*/
+  font-size: 18px;
+  }
+
+  papertitle {
+  /* font-family:'Lato', Veranda, Helvetica, sans-serif; */
+  font-family: "Veranda", sans-serif;
+  font-size: 18px; /*14*/
+  font-weight: 300;
+  color: #F26430; #C6CA53; /*#153243 /* /#e37222; /*#07889b ;*/ /*#07889b*/
+  }
+
+  cvtopic{
+  /* font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/ */
+  font-family: "Veranda", sans-serif;
+  font-size: 20px; /*14*/
+  font-weight: 500;
+  /* text-decoration: underline; */
+  color: #F26430; /*#07889b ;*/ /*#07889b*/
+  }
+
+  cvtitle {
+  /* font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/ */
+  font-family: "Veranda", sans-serif;
+  font-weight: 500;
+  color:  #000000; /*#153243;*/  /*#e37222*;/ /*#fc4a1a;*/
+  font-size: 18px;
+  }
+
+  cvtext{
+  /* font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/ */
+  font-family: "Veranda", sans-serif;
+  font-size: 15px; /*14*/
+  font-weight: 100;
+  /* text-decoration: underline; */
+  /* color: #07889b ;/*#e37222; /*#07889b ;*/ /*#07889b*/ */
+  }
+
+  name {
+  /* font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/ */
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 42px;
+  }
+  li:not(:last-child) {
+      margin-bottom: 5px;
+  }
+
+  abstract {
+  /* font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/ */
+  /* font-family: "Gill Sans", sans-serif; */
+  font-family: "Veranda", sans-serif;
+  font-size: 15px; /*14*/
+  /* font-weight: 700; */
+  }
+
+  author {
+  /* font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; /*'Lato', Verdana, Helvetica, sans-serif;*/ */
+  /* font-family: "Gill Sans", sans-serif; */
+  font-family: "Veranda", sans-serif;
+  font-size: 14px; /*14*/
+  /* font-weight: 700; */
+  /* color: #07889b */
+  }
+
+  /* Additional visual effects */
+  /* .one
+  {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  }
+  .two
+  {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+  }
+  .fade {
+   transition: opacity .2s ease-in-out;
+   -moz-transition: opacity .2s ease-in-out;
+   -webkit-transition: opacity .2s ease-in-out;
+  }
+  span.highlight {
+      background-color: #ffffd0;
+  } */
+
+
+
+  </style>
+
+    <link href="./_files/css" rel="stylesheet" type="text/css">
+    <style id="dark-reader-style" type="text/css">@media screen {
+
+  /* Leading rule */
+  html {
+    -webkit-filter: brightness(100%) contrast(100%) grayscale(20%) sepia(10%) !important;
+  }
+
+  /* Text contrast */
+  html {
+    text-shadow: 0 0 0 !important;
+  }
+
+  /* Full screen */
+  *:-webkit-full-screen, *:-webkit-full-screen * {
+    -webkit-filter: none !important;
+  }
+
+  /* Page background */
+  html {
+    background: rgb(255,255,255) !important;
+  }
+
+  /* Table Formatting */
+
+  th {
+    border: 2px solid #999;
+    padding: 0.5rem;
+  }
+  table {
+  border-collapse: collapse;
+}
+
+
+  }</style>
+
+<!-- Uncomment to make additional text visible (such as extended abstracts) -->
+  <!-- <script type="text/javascript">
+     function visibility_on(id) {
+          var e = document.getElementById(id+"_text");
+          if(e.style.display == 'none')
+              e.style.display = 'block';
+          var e = document.getElementById(id+"_img");
+          if(e.style.display == 'none')
+              e.style.display = 'block';
+     }
+     function visibility_off(id) {
+          var e = document.getElementById(id+"_text");
+          if(e.style.display == 'block')
+              e.style.display = 'none';
+          var e = document.getElementById(id+"_img");
+          if(e.style.display == 'block')
+              e.style.display = 'none';
+     }
+     function toggle_visibility(id) {
+         var e = document.getElementById(id+"_text");
+         if(e.style.display == 'inline')
+            e.style.display = 'block';
+         else
+            e.style.display = 'inline';
+         var e = document.getElementById(id+"_img");
+         if(e.style.display == 'inline')
+            e.style.display = 'block';
+         else
+            e.style.display = 'inline';
+     }
+     function toggle_vis(id) {
+         var e = document.getElementById(id);
+         if (e.style.display == 'none')
+             e.style.display = 'inline';
+         else
+             e.style.display = 'none';
+     }
+  </script> -->
+
+
+<!-- Make a sticky header or footer that doesn't move as you scroll) -->
+<style>
+  /* Add some padding on document prevents the main text hiding beneath the header */
+  body{
+      padding-top: 50px;
+      padding-bottom: 20px;
+  }
+  .fixed-header, .fixed-footer{
+      width: 100%;
+      position: fixed;
+      background: #FFFFFF;
+      padding: 15px 0;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #e0e0e0;
+
+
+      color: #e37222;
+  }
+  .fixed-header{
+      top: 0;
+  }
+  .fixed-footer{
+      bottom: 0;
+  }
+  .container{
+      width: 80%;
+      margin: 0 auto; /* Center the DIV horizontally */
+  }
+  /* set color of navigation bar default (unhighlighted) here */
+  nav a{
+      color: #F26430; /* #7DA862; #e37222; */
+      text-decoration: none;
+      padding: 7px 25px;
+      font-weight: 500;
+      display: inline-block;
+  }
+  html {
+    scroll-behavior: smooth;
+}
+</style>
+</head>
+
+<body>
+
+    <div class="fixed-header" style="text-align:center">
+        <div class="container">
+            <nav>
+                <a href="../index.html#top" onclick="navDropdrown()">Home</a>
+                <a href="../index.html#research" onclick="navDropdrown()">Research</a>
+                <a href="../pages/publications.html" onclick="navDropdrown()">Publications</a>
+                <a href="../index.html#cv" onclick="navDropdrown()">CV</a>
+                <!-- <a href="../index.html#talks" onclick="navDropdrown()">Talks</a> -->
+                <a href="../pages/resources.html" onclick="navDropdrown()">Resources</a>
+                <a href="../index.html#contact" onclick="navDropdrown()">Get in touch</a>
+                <!-- <a href="#resources" onclick="navDropdrown()">Resources</a> -->
+                <!-- <a href="#pages/cv.html" onclick="navDropdrown()">CV</a> -->
+                <!-- <a href="#resources" onclick="navDropdrown()">More</a> -->
+                <!-- <a href="#">Get in touch</a> -->
+            </nav>
+        </div>
+    </div>
+
+
+<!-- Start of Main website material -->
+
+<title>Resources </title>
+
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+  <td style="padding:20px;width:75%;vertical-align:middle">
+
+    <!-- Publications section with correct margins -->
+
+                  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                      <tr style="padding:0px">
+                        <td style="padding:0px">
+                          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                            <tr style="padding:0px">
+                              <td style="padding:o;width:63%;vertical-align:middle">
+                                <p style="text-align:left">
+
+
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                      <tbody>
+                        <tr>
+  <heading>Resources</heading>
+                          <p>
+                            <!-- Representative papers are <span class="highlight">highlighted</span>. -->
+                          </p>
+                          <!-- <a href=#smooth_scroll class="anchor" id="publications"></a> -->
+                        </td>
+                      </tr>
+                    </tbody></table>
+                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            </tbody></table>
+
+    <!-- DEI  -->
+    <p style="text-align:left">
+    <cvtopic>Resources on Diversity Equity and Inclusion in Academia</cvtopic>
+    <br>(in no particular order)</br)
+    <br><cvtext><ul>
+
+
+    </cvtext>
+    </table>
+    </p>
+
+<!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+</table> -->
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<br>
+<footer>
+  <div class="copyright">
+    <p style="text-align:left;">
+    &copy; 2021 Bro Long
+  </p></footer>
+
+        </html>
 
