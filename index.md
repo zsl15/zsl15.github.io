@@ -1,12 +1,13 @@
 
 # building up
-## Header 2
-### Header 3
+
 
 - Publication
 - Research
 - CV
+**aa**
+_IT_
+'code'
 
-**Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
