@@ -5,7 +5,7 @@
 - Publication
 - Research
 - CV
-- Test
+- Group member
 **aa**
 _IT_
 'code'
