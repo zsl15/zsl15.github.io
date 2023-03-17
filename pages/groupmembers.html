@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Group Members</title>
 	<style>
-		.container {
+				.container {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
@@ -35,9 +36,86 @@
 			margin-top: 10px;
 			line-height: 1.5;
 		}
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		header {
+			background-color: #fffff;
+			color: #247ba0;
+			padding: 20px;
+			text-align: center;
+		}
+		h1 {
+			margin: 0;
+			font-size: 36px;
+		}
+		nav {
+			background-color: #f2f2f2;
+			padding: 10px;
+			text-align: center;
+		}
+		nav a {
+			display: inline-block;
+			padding: 10px;
+			color: #333;
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: bold;
+			margin: 0 10px;
+			border-bottom: 2px solid #fff;
+		}
+		nav a:hover {
+			color: #fff;
+			border-bottom: 2px solid #fff;
+		}
+		section {
+			max-width: 1200px;
+			margin: auto;
+			padding: 20px;
+		}
+		section h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		section p {
+			font-size: 16px;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+		section img {
+			max-width: 100%;
+			margin-bottom: 20px;
+		}
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
 	</style>
+
 </head>
 <body>
+	<header>
+		<h1>Low Dimensional Materials Research Group</h1>
+		<p>We explore the properties of low dimensional materials, such as graphene and nanotubes.</p>
+	</header>
+	<nav>
+		<a href="/index.html">Home</a>
+		<a href="/pages/newpage.html">Research</a>
+		<a href="/pages/publications.html">Publications</a>
+		<a href="/pages/groupmembers.html">People</a>
+		<a href="/pages/photoes.html">Group Photoes</a>	
+		<a href="#">Contact</a>
+	</nav>
+	<section>
+		<h2>About Us</h2>
+		<p>We are a group of researchers who are passionate about understanding the properties of low dimensional materials. Our research focuses on exploring the electronic, optical, and mechanical properties of materials such as graphene, nanotubes, and 2D materials.</p>
+		<img src="/photoes/testphoto.jpg" alt="Low Dimensional Materials">
+		<p>Our group uses a variety of techniques, including scanning probe microscopy, Raman spectroscopy, and first-principles calculations, to investigate the properties of these materials. We collaborate with other research groups around the world to further our understanding of low dimensional materials.</p>
+	</section>
 	<div class="container">
 		<div class="member">
 			<img src="/photoes/Wenjun_photo.jpg" alt="wenjun">
@@ -61,5 +139,10 @@
 			<p>Dr. Teng</p>
 		</div>
 	</div>
+	<footer>
+		<p>Copyright © 2023 Low Dimensional Materials Research Group.
+		All rights reserved.</p>
+	</footer>
 </body>
 </html>
+
